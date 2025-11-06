@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title><h2>🎓 Student Registration Form</h2>
+</title>
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(135deg, #002b5c, #4ca1af);
+      color: white;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .form-container {
+      background: rgba(255, 255, 255, 0.1);
+      border: 2px solid white;
+      padding: 30px 50px;
+      border-radius: 15px;
+      box-shadow: 0 0 15px rgba(0,0,0,0.2);
+      width: 400px;
+    }
+    h2 {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    label {
+      display: block;
+      margin-top: 10px;
+    }
+    input, select, textarea {
+      width: 100%;
+      padding: 8px;
+      border-radius: 5px;
+      border: none;
+      margin-top: 5px;
+    }
+    button {
+      margin-top: 15px;
+      width: 100%;
+      background: #003366;
+      color: white;
+      padding: 10px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    button:hover {
+      background: #00509e;
+    }
+  </style>
+</head>
+<body>
+  <div class="form-container">
+    <h2>🎓Student Registration Form</h2>
+    <form action="submit.php" method="POST">
+      <label>Name:</label>
+      <input type="text" name="name" required>
+
+      <label>Date of Birth:</label>
+      <input type="date" name="dob" required>
+
+      <label>Address:</label>
+      <textarea name="address" rows="3"></textarea>
+
+      <label>Section/Class:</label>
+      <select name="section">
+        <option value="A">A</option>
+        <option value="B">B</option>
+        <option value="C">C</option>
+      </select>
+
+      <label>Department/Branch:</label>
+      <select name="dept">
+        <option value="CSE">Computer Science</option>
+        <option value="ECE">Electronics</option>
+        <option value="ME">Mechanical</option>
+        <option value="CE">Civil</option>
+      </select>
+
+      <label>Course:</label>
+      <select name="course">
+        <option value="B.Tech">B.Tech</option>
+        <option value="M.Tech">M.Tech</option>
+        <option value="Diploma">Diploma</option>
+      </select>
+
+      <label>Year of Study:</label>
+      <select name="year">
+        <option value="1st Year">1st Year</option>
+        <option value="2nd Year">2nd Year</option>
+        <option value="3rd Year">3rd Year</option>
+        <option value="4th Year">4th Year</option>
+      </select>
+
+      <label>Contact Number:</label>
+      <input type="text" name="contact" required>
+
+      <label>Email:</label>
+      <input type="email" name="email" required>
+
+      <button type="submit">Submit</button>
+    </form>
+  </div>
+</body>
+</html>
