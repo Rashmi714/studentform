@@ -1,7 +1,7 @@
 <?php
 $servername = "localhost";
 $username = "root";
-$password = ""; 
+$password = "mysqlserver123!"; 
 $dbname = "student_registration";
 
 $conn = new mysqli($servername, $username, $password, $dbname);
